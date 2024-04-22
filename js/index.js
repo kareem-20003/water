@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (name === 'admin@example.com' && password === 'password123') {
       // alert('Login successful!');
       // Redirect to the home page after successful login
-      window.location.href = 'home.html';
+      window.location.href = "home.html";
     } else {
       alert('Invalid credentials. Please try again.');
     }
