@@ -1,253 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/home.css" />
-  
-  </head>
-  <body>
-
-        <!-- =============== Navigation ================ -->
-    <div class="container">
-      <div class="navigation">
-          <ul>
-              <li>
-                  <a href="#">
-                    
-                      <span class="icon">
-                        <img class="logo" src="images/Vector.png">
-                      </span>
-                      <span class="title">Water</span>
-                    
-                  </a>
-              </li>
-
-              <li>
-                  <a href="home.html">
-                      <span class="icon">
-                        <i class="fa-solid fa-house"></i>
-                      </span>
-                      <span class="title">Home</span>
-                  </a>
-              </li>
-
-              <li>
-                  <a href="#">
-                      <span class="icon">
-                        <i class="fa-solid fa-atom"></i>
-                      </span>
-                      <span class="title">Experiments</span>
-                  </a>
-              </li>
-
-              <li>
-                  <a href="tasks.html" >
-                      <span class="icon">
-                        <i class="fa-solid fa-list-check"></i>
-                      </span>
-                      <span class="title">Tasks</span>
-                  </a>
-              </li>
-
-              <li>
-                  <a href="repots.html">
-                      <span class="icon">
-                        <i class="fa-regular fa-file-lines"></i>
-                      </span>
-                      <span class="title">Reports</span>
-                  </a>
-              </li>
-
-              <li>
-                  <a href="#">
-                      <span class="icon">
-                        <i class="fa-solid fa-gear"></i>
-                      </span>
-                      <span class="title">Settings</span>
-                  </a>
-              </li>
-
-              <li>
-                  <a href="index.html">
-                      <span class="icon">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                      </span>
-                      <span class="title">Log Out</span>
-                  </a>
-              </li>
-          </ul>
-        </div>
-      </div>
-    <!-------------------------------main----------------------------->
-      <div class="main">
-        <div class="topbar">
-            <div class="toggle">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <a href="#">
-              <span class="note">
-                <i class="fa-solid fa-bell"></i>
-              </span>
-          </a>
-          <div class="user">
-          <img src="images/Avatar@2x.png" alt="">
-        </div>
-        </div>
-
-        <!------------------charts -------------------------->
-
-        <div class="container2">
-        <div class=" text-left ">
-          <h2>Welcome To Water World !</h2>
-        </div>
-
-        <div class="row  row-cols-1 row-cols-md-3 g-3">
-        <!-------------------card 1----------->
-          <div class="col-md-4">
-            <div class="card">
-              <p>COD</p>
-              <canvas id="myChart1"></canvas>
-            </div>
-          </div>
-  <!-------------------card 2----------->
-          <div class="col-md-4">
-            <div class="card">
-                <p>BOD</p>
-                <canvas id="myChart2"></canvas>
-                
-            </div>
-          </div>
-            <!-------------------card 3----------->
-          <div class="col-md-4">
-            <div class="card">
-              
-                <p>COL</p>
-                <canvas id="myChart3"></canvas>
-          
-            </div>
-          </div>
-        </div>
-
-        <div class="row  row-cols-1 row-cols-md-2 g-4">
-              <!-------------------card 4----------->
-          <div class="col-md-4">
-            <div class="text-left"style =" margin-left: 40px;" >
-                <h3>Recent Experiments</h3>
-              </div>
-            
-            <div class="card">
-              <div class="Experiments">
-                <div class="Experiment-row">
-                  <div class="Experiment-name">COD</div>
-                  <div class="Experiment-detail"><span class="who-did-it">By.Farida Yahia</span> <span>Jan 18 3:22 pm</span></div>
-              </div>
-              <div class="Experiment-row">
-                <div class="Experiment-name">TSS</div>
-                <div class="Experiment-detail"><span class="who-did-it">By.Omina Gamal</span> <span>Jan 18 2:32 pm</span></div>
-              </div>
-              <div class="Experiment-row">
-                <div class="Experiment-name">BOD</div>
-                <div class="Experiment-detail"><span class="who-did-it">By.Omina Gamal</span> <span>Jan 18 1:32 pm</span></div>
-              </div>
-              <div class="Experiment-row">
-                <div class="Experiment-name">PO4</div>
-                <div class="Experiment-detail"><span class="who-did-it">By.Farida Yahia</span> <span>Jan 18 12:32 pm</span></div>
-              </div>
-             
-              </div>
-            
-            </div>
-          </div>
-              <!-------------------card 5----------->
-          <div class="col-md-4">
-            <div class="text-left" style =" margin-left: 30px;">
-              <h3>Daily Tasks</h3>
-            </div>
-            <div class="card">
-                  <div class="tasks" style="margin-left: 25px;">
-
-                    <div class="task-row">
-                      <img src="images/Logo (2).png" alt="Icon 1" class="task-icon">
-                      <div class="task-name">Daily Report 1</div>
-                      <div class="task-date">Jan 18 at 5:00 pm</div>
-                  </div>
-                  <div class="task-row">
-                      <img src="images/Logo.png" alt="Icon 2" class="task-icon">
-                      <div class="task-name">Attend the meeting</div>
-                      <div class="task-date">Jan 18 at 6:00 pm</div>
-                  </div>
-                  <div class="task-row">
-                      <img src="images/Logo (1).png" alt="Icon 3" class="task-icon">
-                      <div class="task-name">Send Monthly Report</div>
-                      <div class="task-date">Jan 18 at 1:00 pm</div>
-                  </div>
-                  <div class="task-row">
-                      <img src="images/Logo (2).png" alt="Icon 4" class="task-icon">
-                      <div class="task-name">Daily Report 2</div>
-                      <div class="task-date">Jan 18 at 2:00 pm</div>
-                  </div>
-                  <div class="task-row">
-                      <img src="images/Logo (3).png" alt="Icon 5" class="task-icon">
-                      <div class="task-name">Train new internships</div>
-                      <div class="task-date">Jan 18 at 7:00 pm</div>
-                  </div>
-
-                  </div>
-            </div>
-          </div>
-            <!-------------------card 6----------->
-          <div class="col-md-4 ">
-            
-            <div class="card " style=" margin-top: 62px ;">
-      
-                <p>Efficiency</p>
-             
-                <div class="circle">85%</div>
-                <div class="rate rate1">0</div>
-                <div class="rate rate2">100</div>
-            
-            </div>
-          </div>
-        </div>
-  
-    </div>
-    
-
-
-    <script src="js/all.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
-  
-    <script src="js/main.js"></script>
-    <script src="../js/index.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water System</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+ 
+</head>
+<body>
    
-  
-  </body>
+
+    <div class="menu">
+        <ul class=" p-0">
+            <li>
+                <a href="" >
+                    <i class="fa-solid fa-droplet fa-2xl"></i>
+                    <h3>Water</h3>
+                </a>
+            </li>
+            <li>
+                <a href="home.html" class="active">
+
+                    <i class="fa-solid fa-house-user fa-2xl "></i>
+                    <h4>Home</h4>
+                </a>
+            </li>
+
+            <li>
+                <a href="Experiments/experiments.html">
+                    <i class="fa-solid fa-users fa-2xl"></i>
+                    <h4>Experiments</h4>
+                </a>
+            </li>
+
+            <li>
+                <a href="tasks.html">
+                    <i class="fa-solid fa-file-circle-check fa-2xl"></i>
+                    <h4>Tasks</h4>
+                </a>
+            </li>
+
+            <li>
+                <a href="repots.html">
+                    <i class="fa-solid fa-window-restore fa-2xl"></i>
+                    <h4>Reports</h4>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-gear fa-2xl"></i>
+                    <h4>Settings</h4>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="index.html">
+                    <i class="fa-solid fa-arrow-right-from-bracket fa-2xl"></i>
+                    <h4>Logout</h4>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+    
+            <div class="nour mb-3 ">
+                <!-- <div>
+                    <i class="fa-solid fa-bars"></i>
+                </div> -->
+
+                <div class=" logos d-flex align-items-center">
+                    <div>
+                        <i class="fa-solid fa-bell "></i>
+                       <img src="images/Avatar@2x.png" alt="" srcset="">
+                    </div>
+                    <div class="navbarS">
+                       <h2> Farida Yahia</h2>
+                       <p style="color:#ABAEB7;">Farida_Yahia@gmail.com</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+           </div>
+    
+           <section class="container">
+
+            <div class="row pt-3 pb-2 pl-2">
+
+                <div class=" col-lg-4 col-md-6 pt-1 ">
+                    <h3 class="custom-text-color2">Welcome to Water World!</h3>
+                    <div class="card">
+                        <p style="font-weight: bold; font-size: 22px;">COD</p>
+                        <canvas id="myChart1"></canvas>
+                      </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 pt-5">
+                    <div class="card">
+                        <p style="font-weight: bold; font-size: 22px;">BOD</p>
+                        <canvas id="myChart2"></canvas>
+                      </div>
+                </div>
+
+                <div class=" col-lg-4 col-md-6 pt-5">
+                    <div class="card">
+                        <p style="font-weight: bold; font-size: 22px;" >COL</p>
+                        <canvas id="myChart3"></canvas>
+                      </div>
+                </div>
+
+            </div>
+                
+
+
+            <div class="row pt-3 pb-3 pl-2">
+                
+                <div class=" col-lg-4 col-md-6">
+                    <h3 class=" custom-text-color1">Recent Expretion</h3>
+                      <div class="cart1">
+                        <div class="contcard1 d-flex align-items-center">
+                            <h4  style="color:#32718B">COD</h4>
+                            <h6 class=" px-3 pe-4" style="color:#ABAEB7;" >By.Farida Yahia</h6>
+                            <p style="color:#ABAEB7;">Jan 18 <br/>3:22 pm</p>
+                         </div>
+    
+                         <div class="contcard1 d-flex align-items-center">
+                            <h4 style="color:#32718B" >TSS</h4>
+                            <h6 class=" px-3 pe-4" style="color:#ABAEB7;">By.Omina Gamal</h6>
+                            <p style="color:#ABAEB7;">Jan 18 <br/> 3:22 pm</p>
+                         </div>
+    
+                         <div class="contcard1 d-flex align-items-center">
+                            <h4 style="color:#32718B">BOD</h4>
+                            <h6 class=" px-3 pe-4" style="color:#ABAEB7;">By.Omina Gamal</h6>
+                            <p style="color:#ABAEB7;">Jan 18 <br/>3:22 pm</p>
+                         </div>
+    
+                         <div class="contcard1 d-flex align-items-center">
+                            <h4 style="color:#32718B">PO4</h4>
+                            <h6 class=" px-3 pe-4" style="color:#ABAEB7;">By.Farida Yahia </h6>
+                            <p style="color:#ABAEB7;">Jan 18<br/> 3:22 pm</p>
+                         </div>
+                      </div>
+                </div>
+
+                <div class=" col-lg-4 col-md-6">
+                    <h3 class=" custom-text-color1">Daily Tasks</h3>
+                    <div class="cart2">
+                        <div class="contcard2 pt-3">
+                            <div class="d-flex align-items-center justify-content-evenly">
+                              <i class="fa-regular fa-file-image fa-2xl" style="color:#2D55B4;" ></i>
+                              <h5 style="margin-right: 36px; color:#32718B">Daily Repot 1</h5>
+                            </div>
+                            <p class="text-center ms-5"style="color:#ABAEB7;" >Jan 18 at 5:00 pm </p>
+                          </div>
+                          <div class="contcard2">
+                            <div class="d-flex align-items-center justify-content-evenly">
+                              <i class="fa-regular fa-clock fa-2xl"  style="color:#2D55B4;" ></i>
+                              <h5 style="margin-right: .1em; color:#32718B">Attend the meeting</h5>
+                            </div>
+                            <p class="text-center ms-3" style="color:#ABAEB7;">Jan 18 at 5:00 pm </p>
+                          </div>
+                          <div class="contcard2">
+                            <div class="d-flex align-items-center justify-content-evenly">
+                              <i class="fa-solid fa-folder-closed fa-2xl"  style="color:#2D55B4;" ></i>
+                              <h5 style="margin-right: .1em; color:#32718B ;">Send Monthly Report</h5>
+                            </div>
+                            <p class="text-center ms-5 " style="color:#ABAEB7 ;">Jan 18 at 5:00 pm </p>
+                          </div> 
+                          <div class="contcard2">
+                            <div class="d-flex align-items-center justify-content-evenly">
+                              <i class="fa-regular fa-file-image fa-2xl"  style="color:#2D55B4;" ></i>
+                              <h5 style="margin-right: 36px; color:#32718B">Daily Report 2</h5>
+                            </div>
+                            <p class="text-center ms-5" style="color:#ABAEB7 ;">Jan 18 at 5:00 pm </p>
+                          </div>
+    
+                    </div>
+
+                    
+
+
+
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 pt-5">
+                    <div class="contcard3 pb-2 "> 
+                    <div class="" >
+                      <h3 class="pt-3 p-3 ">Efficiency</h3>
+                    </div>
+                    <div class="bigCicle">
+                      <div class="smallC ">
+                      <h3 class="text-center pt-5 ">58%</h3>
+                      <div class="hid"></div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+        
+
+                
+               
+            </div>
+        </section>
+
+       
+
+    </div>
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

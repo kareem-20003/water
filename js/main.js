@@ -1,28 +1,3 @@
-// add hovered class in selected list item
-
-let list =document.querySelectorAll('.navigation li ');
-function activelink(){
-    list.forEach((item)=>
-    item.classList.remove('hovered'));
-    this.classList.add('hovered');
-}
-list.forEach((item)=>
-item.addEventListener('mouseover',activelink));
-
-
-/////////////////////////////// MenuToggle///////////////////////////////////
-let toggle = document.querySelector('.toggle');
-let navigation = document.querySelector('.navigation');
-let main = document.querySelector('.main');
-
-
-toggle.onclick = function(){
-
-    navigation.classList.toggle('active');
-    main.classList.toggle('active');
-
-}
-
 /////////////////////////// CHARTS//////////////////////////////////////////////
 
 const chart1 = document.getElementById('myChart1').getContext('2d');
@@ -118,7 +93,7 @@ const data2 = {
   labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
   datasets: [{
       label: 'Weekly Insights',
-      data: [1, 2.5, 3, 4, 5, 3.5,2.5], // data   for chart3         
+      data: [1, 2.5, 3, 4, 1.5, 3.5,2.5], // data   for chart3         
       backgroundColor: gradient3,
       borderColor: 'rgba(54, 162, 235, 1)',
       borderWidth: 1,
@@ -149,47 +124,3 @@ const data2 = {
     
     }
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-* Math.random()==>[0.000 ==> 0.999]
-* Math.random()*6 ==>[0.000 ==> 5.999] example : we can change the number
-* Math.floor(3.45632)==> remove the decimal = 3
-* Math.floor( Math.random() * 6 )==> output the numbers between 0 ,6 but without decimal
-* push() ===> to add variable at the end of array
-* pop() ==> to delete variable from the end of array
-* shift() ==> delete variable from the start of array
-* unshift() ==> add variable at the start of the array
-* two type of variable is (let,const)
-let==> can be different
-const ==> can't be different
-*/
