@@ -23,3 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+// reports note
+document.querySelector('#add-btn').addEventListener('click', function() {
+  document.querySelector('#notes').style.display = 'block';
+})
