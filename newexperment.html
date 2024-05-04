@@ -85,12 +85,24 @@
     
     <!-- buttons -->
     <div class="btns text-center">
-        <button type="button" class="btn btn-lg  btn1 ">Cancel</button>
+        <button id="cancelButton" type="button" class="btn btn-lg  btn1 ">Cancel</button>
         <button type="button" class="btn btn-lg  btn2 ">Saved</button>
     </div>
         
 
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("cancelButton").addEventListener("click", function() {
+                document.getElementById("name").value = "";
+                document.getElementById("output").value = "";
+                document.getElementById("duration").value = "";
+                document.getElementById("temp").value = "";
+                document.getElementById("equipment").value = "";
+                document.getElementById("instructions").value = "";
+            });
+        });
+    </script>
     
     </body>
     </html>

@@ -99,12 +99,12 @@
                 <div class="row">
                     <div class=" col mb-3">
                     <label for="name" class="form-label solid-label">First Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+                    <input type="text" class="form-control" id="first-name" name="name" required>
                     </div>
 
                         <div class=" col mb-3">
                         <label for="name" class="form-label  solid-label">Last Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <input type="text" class="form-control" id="last-name" name="name" required>
                         </div>
                 </div>
 
@@ -142,7 +142,7 @@
 
               
               <div class="btns text-center">
-                <button type="button" class="btn btn-lg  color1 ">Cancel</button>
+                <button id="cancelButton" type="button" class="btn btn-lg  color1 ">Cancel</button>
                 <button type="button" class="btn btn-lg  color2 ">Saved</button>
             </div>
 
@@ -151,6 +151,20 @@
         </div>
     
     </section>
+
+    <script>
+          document.getElementById("cancelButton").addEventListener("click", function() {
+            // Reset input fields
+            document.getElementById("first-name").value = "";
+            document.getElementById("last-name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("address").value = "";
+            document.getElementById("contact").value = "";
+            document.getElementById("city").value = "";
+            document.getElementById("state").value = "";
+            document.getElementById("password").value = "";
+        });
+    </script>
 
 </body>
 </html>

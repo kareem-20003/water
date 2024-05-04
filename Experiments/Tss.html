@@ -188,7 +188,7 @@
             <div class="col-md-2 ">
                 <h3>Inf:</h3>
                 <div class="card2">
-                    <div class="box2" contenteditable="true" >
+                    <div class="box2" id="infData" contenteditable="true" >
                         
                     </div>
                 </div>
@@ -198,7 +198,7 @@
             <div class="col-md-2"  >
                 <h3>EFF:</h3>
                 <div class="card2">
-                    <div class="box2" contenteditable="true" >
+                    <div class="box2" id="effData"  contenteditable="true" >
                 
                     </div>
                 </div>
@@ -208,7 +208,7 @@
             <div class="col-md-2" >
                 <h3>Blank:</h3>
                 <div class="card2">
-                    <div class="box2" contenteditable="true">
+                    <div class="box2" id="blankData" contenteditable="true">
                        
                     </div>
                 </div>
@@ -217,12 +217,24 @@
         </div>
 
         <div class="btns text-center">
-            <button type="button" class="btn btn-lg  color1 ">Cancel</button>
+            <button id="cancelButton" type="button" class="btn btn-lg  color1 ">Cancel</button>
             <button type="button" class="btn btn-lg  color2 ">Saved</button>
        
         </div>
        
     </div>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("cancelButton").addEventListener("click", function() {
+        document.getElementById("infData").textContent = "";
+        document.getElementById("effData").textContent = "";
+        document.getElementById("blankData").textContent = "";
+    });
+});
+</script>
+
 </body>
 
 </html>
